@@ -2,6 +2,21 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: 'Weaviate ECS Cluster and Service with SageMaker Studio and VPC'
 
 Resources:
+  ECSPermissionsPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: WorkshopECSAccess
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action:
+              - "ecs:*"
+              - "iam:PassRole"
+            Resource: "*"
+      Roles:
+        - WSParticipantRole
+
   VPC:
     Type: AWS::EC2::VPC
     Properties:
@@ -162,11 +177,13 @@ Resources:
 
   WeaviateCluster:
     Type: AWS::ECS::Cluster
+    DependsOn: ECSPermissionsPolicy
     Properties:
       ClusterName: weaviate-cluster
 
   WeaviateTaskDefinition:
     Type: AWS::ECS::TaskDefinition
+    DependsOn: ECSPermissionsPolicy
     Properties:
       Family: weaviate-task
       Cpu: '1024'
@@ -208,6 +225,7 @@ Resources:
 
   WeaviateService:
     Type: AWS::ECS::Service
+    DependsOn: ECSPermissionsPolicy
     Properties:
       ServiceName: weaviate-service
       Cluster: !Ref WeaviateCluster
@@ -245,6 +263,7 @@ Resources:
 
   ECSTaskExecutionRole:
     Type: AWS::IAM::Role
+    DependsOn: ECSPermissionsPolicy
     Properties:
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
@@ -258,6 +277,7 @@ Resources:
 
   ECSTaskRole:
     Type: AWS::IAM::Role
+    DependsOn: ECSPermissionsPolicy
     Properties:
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
