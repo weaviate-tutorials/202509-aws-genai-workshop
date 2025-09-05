@@ -16,6 +16,20 @@
 # '# BEGIN_SOLUTION' & '# END_SOLUTION' and
 # replace it with '# ADD YOUR CODE HERE'
 # and clear all cell outputs to produce student-friendly versions of Jupyter notebooks
+#
+# ===== Example =====
+# ===== Original =====
+# STUDENT TODO:
+# Use the built-in len() function on the 'articles' collection to get the total number of articles
+# BEGIN_SOLUTION
+# print(f"Total articles in collection: {len(articles)}")
+# END_SOLUTION
+#
+# ==== After ====
+# STUDENT TODO:
+# Use the built-in len() function on the 'articles' collection to get the total number of articles
+# # ADD YOUR CODE HERE
+#
 import nbformat
 import re
 import glob
