@@ -62,8 +62,14 @@ Preview:
 
 ## Repository notes
 
-- TODO
+- For students, most of the required packages are pre-installed in the SageMaker Studio environment.
+    - The notebooks include any installation instructions for any additional required packages.
+- This project was developed with `uv`. The primary list of required packages are in `pyproject.toml`; although a `requirements.txt` file is also provided for convenience.
 
 ## Instructor / developer notes
 
-- TODO
+- There are two versions of notebooks in the `multimodal-rag` workshop:
+    - `*.ipynb`: The student notebooks with student TODOs
+    - `*-complete.ipynb`: The completed notebooks with solutions
+- Run `generate_student_notebooks.py` from the `multimodal-rag` directory to regenerate the student notebooks from the completed notebooks.
+    - See the comments in the script for more details.
