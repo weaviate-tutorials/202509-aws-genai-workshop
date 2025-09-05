@@ -9,8 +9,11 @@ dependencies = [
     "chonkie>=1.2.1",
     "datasets>=4.0.0",
     "docling>=2.50.0",
+    "jupyterlab>=4.4.7",
     "pandas>=2.3.2",
+    "plotly>=6.3.0",
     "pymupdf>=1.26.4",
+    "scikit-learn>=1.7.1",
     "tqdm>=4.67.1",
     "weaviate-client>=4.16.9",
 ]
