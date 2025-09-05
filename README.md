@@ -2,12 +2,14 @@
 
 ## Overview
 
-This repository contains materials from a hands-on workshop where you'll build intelligent search systems, RAG workflows, and AI agents. You will learn how to use Weaviate vector database and AWS Bedrock to transform your data workflow with practical AI implementations in just one day.
+> [!NOTE]
+> This repository contains materials from a hands-on workshop where you'll build intelligent search systems, RAG workflows, and AI agents. You will learn how to use Weaviate vector database and AWS Bedrock to transform your data workflow with practical AI implementations in just one day.
 
 ## Prerequisites
 
-- None
-    - At the workshop, a temporary AWS account will be provided for you to use. No personal AWS account is needed.
+**None**: At the workshop, a temporary AWS account will be provided for you to use.
+
+Preferable: Some familiarity with AWS services and Python programming.
 
 > [!CAUTION]
 > Optionally, you can run the workshop on your own AWS account. **Doing so will incur costs on your own account.** We cannot be responsible for any costs incurred on your personal AWS account. Please proceed with caution and at your own risk.
@@ -39,7 +41,7 @@ Preview:
 |----------|----------|----------|
 | ![Go to SageMaker Studio](assets/mmrag-setup-preview-1.png) | ![Open a JupyterLab instance](assets/mmrag-setup-preview-2.png) | ![Clone the repo](assets/mmrag-setup-preview-3.png) |
 
-Go to the [GuideFlow tutorial](https://app.guideflow.com/player/3r3d3nmsnp) for the full instructions.
+**Go to the [GuideFlow tutorial](https://app.guideflow.com/player/3r3d3nmsnp) for the full instructions.**
 
 ### Agent workshop setup
 
