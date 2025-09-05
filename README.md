@@ -33,6 +33,13 @@ This repository contains materials from a hands-on workshop where you'll build i
     - Clone this repository into your SageMaker Studio environment
 2. Go to the `multimodal-rag` directory and open the `0-setup.ipynb` notebook.
 
+[GuideFlow tutorial](https://app.guideflow.com/player/3r3d3nmsnp) Preview:
+
+| Set up | Column 2 | Column 3 |
+|----------|----------|----------|
+| ![Go to SageMaker Studio](assets/mmrag-setup-preview-1.png) | ![Open a JupyterLab instance](assets/mmrag-setup-preview-2.png) | ![Clone the repo](assets/mmrag-setup-preview-3.png) |
+| Go to SageMaker Studio | Open a JupyterLab instance | Clone the repo |
+
 ### Agent workshop setup
 
 1. Go to SageMaker Studio and open Code Editor.
