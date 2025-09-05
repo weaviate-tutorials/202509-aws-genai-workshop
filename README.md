@@ -1,15 +1,12 @@
 # AWS GenAI + Weaviate: *Hands-on Workshop*
 
-## Overview
-
-> [!NOTE]
-> This repository contains materials from a hands-on workshop where you'll build intelligent search systems, RAG workflows, and AI agents. You will learn how to use Weaviate vector database and AWS Bedrock to transform your data workflow with practical AI implementations in just one day.
+This repository is for a hands-on workshop for building intelligent search systems, RAG workflows, and AI agents, with [Weaviate vector database](https://docs.weaviate.io/weaviate) and [AWS Bedrock](https://aws.amazon.com/bedrock/) in less than a day.
 
 ## Prerequisites
 
 **None**: At the workshop, a temporary AWS account will be provided for you to use.
 
-Preferable: Some familiarity with AWS services and Python programming.
+Recommended: Some familiarity with AWS services and Python programming.
 
 > [!CAUTION]
 > Optionally, you can run the workshop on your own AWS account. **Doing so will incur costs on your own account.** We cannot be responsible for any costs incurred on your personal AWS account. Please proceed with caution and at your own risk.
