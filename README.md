@@ -32,7 +32,7 @@ Preview:
 
 ### Create Weaviate & SageMaker resources
 
-1. Follow [this GuideFlow tutorial - TODO - UPDATE LINK]. This shows you how to:
+1. Follow [this GuideFlow tutorial - TODO - UPDATE LINK]. This shows you how to use AWS CloudFormation and this template file (0-setup-weaviate.yaml) to:
     - Spin up a Weaviate database on AWS ECS
     - Set up SageMaker Studio where you will run the workshop notebooks
 
