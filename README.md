@@ -13,21 +13,32 @@ Recommended: Some familiarity with AWS services and Python programming.
 
 ## Setup instructions
 
-### General setup
+### Login & Bedrock access
 
 1. Click on the provided link to access the AWS workshop account.
     - You may need to authenticate with a one-time password (OTP) sent to your email.
-2. Once logged in, follow this [GuideFlow tutorial](https://app.guideflow.com/player/lpnvo37sjr) to set up your AWS environment. This shows you how to:
+2. Once logged in, follow [this visual guide to set up your AWS environment](https://app.guideflow.com/player/lpnvo37sjr). This shows you how to:
     - Accept the terms and join the event
     - Open the AWS Management Console
     - Obtain access to the Bedrock AI models
-3. After these steps, follow this next [GuideFlow tutorial - TODO - UPDATE LINK]. This shows you how to:
+
+Preview:
+
+| Open AWS Console | Go to Bedrock | Request model access |
+|----------|----------|----------|
+| ![Open AWS Console](assets/bedrock-setup-preview-1.png) | ![Go to Bedrock](assets/bedrock-setup-preview-2.png) | ![Request model access](assets/bedrock-setup-preview-3.png) |
+
+**Go to the [visual guide](https://app.guideflow.com/player/lpnvo37sjr) for the full instructions.**
+
+### Create Weaviate & SageMaker resources
+
+1. Follow [this GuideFlow tutorial - TODO - UPDATE LINK]. This shows you how to:
     - Spin up a Weaviate database on AWS ECS
     - Set up SageMaker Studio where you will run the workshop notebooks
 
 ### Multimodal RAG workshop setup
 
-1. Follow this [GuideFlow tutorial](https://app.guideflow.com/player/3r3d3nmsnp) to get set up for the Multimodal RAG workshop. This shows you how to:
+1. Follow this [visual guide for setting up the Multimodal RAG workshop](https://app.guideflow.com/player/3r3d3nmsnp). This shows you how to:
     - Set up a SageMaker Studio JupyterLab environment
     - Clone this repository into your SageMaker Studio environment
 2. Go to the `multimodal-rag` directory and open the `0-setup.ipynb` notebook.
@@ -38,7 +49,7 @@ Preview:
 |----------|----------|----------|
 | ![Go to SageMaker Studio](assets/mmrag-setup-preview-1.png) | ![Open a JupyterLab instance](assets/mmrag-setup-preview-2.png) | ![Clone the repo](assets/mmrag-setup-preview-3.png) |
 
-**Go to the [GuideFlow tutorial](https://app.guideflow.com/player/3r3d3nmsnp) for the full instructions.**
+**Go to the [visual guide](https://app.guideflow.com/player/3r3d3nmsnp) for the full instructions.**
 
 ### Agent workshop setup
 
