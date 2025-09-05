@@ -28,12 +28,10 @@ This repository contains materials from a hands-on workshop where you'll build i
 
 ### Multimodal RAG workshop setup
 
-1. Go to SageMaker Studio and open JupyterLab.
-2. Clone this repository into your SageMaker Studio environment:
-    - Go to the Git tab on the left sidebar
-    - Click on the "Clone a Repository" button
-    - Enter the URL of this repository: `https://github.com/weaviate-tutorials/202509-aws-genai-workshop.git`
-3. Open the `multimodal-rag` directory and start with `0-setup.ipynb` notebook.
+1. Follow this [GuideFlow tutorial](https://app.guideflow.com/player/3r3d3nmsnp) to get set up for the Multimodal RAG workshop. This shows you how to:
+    - Set up a SageMaker Studio JupyterLab environment
+    - Clone this repository into your SageMaker Studio environment
+2. Go to the `multimodal-rag` directory and open the `0-setup.ipynb` notebook.
 
 ### Agent workshop setup
 
