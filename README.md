@@ -15,26 +15,21 @@ Recommended: Some familiarity with AWS services and Python programming.
 
 ### Login & Bedrock access
 
-1. Click on the provided link to access the AWS workshop account.
-    - You may need to authenticate with a one-time password (OTP) sent to your email.
-2. Once logged in, follow [this visual guide to set up your AWS environment](https://app.guideflow.com/player/lpnvo37sjr). This shows you how to:
-    - Accept the terms and join the event
+1. Download this [CloudFormation template file (0-setup-weaviate.yaml)](./0-setup-weaviate.yaml).
+2. Click on the provided AWS workshop link (to be provided on the day of the workshop)
+3. **Follow [this visual guide](https://app.guideflow.com/player/zklz623bop)**. It shows how to:
+    - Access the AWS workshop account.
+      - You may need to authenticate with a one-time password (OTP) sent to your email.
     - Open the AWS Management Console
     - Obtain access to the Bedrock AI models
+    - Spin up a Weaviate database on AWS ECS
+    - Set up SageMaker Studio where you will run the workshop notebooks
 
 Preview:
 
 | Open AWS Console | Go to Bedrock | Request model access |
 |----------|----------|----------|
 | ![Open AWS Console](assets/bedrock-setup-preview-1.png) | ![Go to Bedrock](assets/bedrock-setup-preview-2.png) | ![Request model access](assets/bedrock-setup-preview-3.png) |
-
-**Go to the [visual guide](https://app.guideflow.com/player/lpnvo37sjr) for the full instructions.**
-
-### Create Weaviate & SageMaker resources
-
-1. Follow [this visual tutorial](https://app.guideflow.com/player/3r3d3wmhnp). This shows you how to use AWS CloudFormation and this template file (0-setup-weaviate.yaml) to:
-    - Spin up a Weaviate database on AWS ECS
-    - Set up SageMaker Studio where you will run the workshop notebooks
 
 ### Multimodal RAG workshop setup
 

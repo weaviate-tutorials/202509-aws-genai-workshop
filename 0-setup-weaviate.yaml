@@ -2,20 +2,8 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: 'Weaviate ECS Cluster and Service with SageMaker Studio and VPC'
 
 Resources:
-  WSParticipantRole:
-    Type: AWS::IAM::Role
-    Properties:
-      RoleName: WSParticipantRole
-      AssumeRolePolicyDocument:
-        Version: '2012-10-17'
-        Statement:
-          - Effect: Allow
-            Principal:
-              AWS: !Sub "arn:aws:iam::${AWS::AccountId}:root"
-            Action: 'sts:AssumeRole'
   ECSPermissionsPolicy:
     Type: AWS::IAM::Policy
-    DependsOn: WSParticipantRole
     Properties:
       PolicyName: WorkshopECSAccess
       PolicyDocument:
