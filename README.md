@@ -11,9 +11,9 @@ Recommended: Some familiarity with AWS services and Python programming.
 > [!CAUTION]
 > Optionally, you can run the workshop on your own AWS account. **Doing so will incur costs on your own account.** We cannot be responsible for any costs incurred on your personal AWS account. Please proceed with caution and at your own risk.
 
-## Setup instructions
+## Workshop instructions
 
-### Login & Bedrock access
+### AWS setup
 
 1. Download this [CloudFormation template file (0-setup-weaviate.yaml)](./0-setup-weaviate.yaml).
 2. Click on the provided AWS workshop link (to be provided on the day of the workshop)
