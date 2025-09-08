@@ -1,7 +1,7 @@
 import weaviate
 from boto3 import Session
 
-class WeaviateConnect:
+class WeaviateUtil:
     """
     Static class for Weaviate connection and search operations.
     Implements singleton pattern for database connection.
@@ -10,14 +10,14 @@ class WeaviateConnect:
     # _client_connection_timestamp = None
     
     
-    def _connect() -> weaviate.WeaviateClient:
+    def connect() -> weaviate.WeaviateClient:
         """
         Connect to Weaviate using singleton pattern.
         Only connects once, subsequent calls return existing connection.
         """
 
         # Connect to Weaviate if not yet connected
-        if not WeaviateConnect._weaviate_client:
+        if not WeaviateUtil._weaviate_client:
             print("Getting AWS auth credentials ...")
             session = Session()
             credentials = session.get_credentials()
@@ -34,7 +34,7 @@ class WeaviateConnect:
                 print("Connecting to Weaviate...")
 
                 # Connect to Weaviate
-                WeaviateConnect._weaviate_client = weaviate.connect_to_local(
+                WeaviateUtil._weaviate_client = weaviate.connect_to_local(
                     "10.0.2.185", # YOU Private IP address goes here
                     headers={
                         "X-AWS-Access-Key": AWS_ACCESS_KEY,
@@ -43,10 +43,10 @@ class WeaviateConnect:
                     }
                 )
 
-                print("Weaviate client is ready: ", WeaviateConnect._weaviate_client.is_ready())
+                print("Weaviate client is ready: ", WeaviateUtil._weaviate_client.is_ready())
 
             except Exception as e:
                 print(f"ERROR! Failed to connect to Weaviate: {e}\n")
 
         
-        return WeaviateConnect._weaviate_client
+        return WeaviateUtil._weaviate_client
