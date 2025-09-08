@@ -195,7 +195,7 @@ Resources:
       TaskRoleArn: !Ref 'ECSTaskRole'
       ContainerDefinitions:
         - Name: weaviate
-          Image: cr.weaviate.io/semitechnologies/weaviate:v1.32.5
+          Image: cr.weaviate.io/semitechnologies/weaviate:1.32.6
           Cpu: 1024
           Memory: 3072
           PortMappings:
