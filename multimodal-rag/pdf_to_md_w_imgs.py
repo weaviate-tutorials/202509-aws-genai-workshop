@@ -35,7 +35,9 @@ def parse_pdf_with_images(input_doc_path: Path, output_dir: Path):
     conv_res.document.save_as_markdown(md_filename, image_mode=ImageRefMode.REFERENCED)
 
 
-pdf_names = [f.name for f in data_folder.glob("hai*.pdf")]
+pdf_names = [
+    f.name for f in data_folder.glob("*.pdf") if "amazon" not in f.name.lower()
+]
 
 for pdf_fname in pdf_names:
     print(f"Processing file: {pdf_fname}")
