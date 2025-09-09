@@ -55,6 +55,13 @@ Preview:
     - Enter the URL of this repository: `https://github.com/weaviate-tutorials/202509-aws-genai-workshop.git`
 3. Open the `agent` directory and start with `0-setup.ipynb` notebook.
 
+## Resources
+
+- Weaviate documentation: https://docs.weaviate.io/weaviate
+- Weaviate Python client: https://weaviate-python-client.readthedocs.io
+- AWS Bedrock documentation: https://docs.aws.amazon.com/bedrock/latest/userguide/
+- Pydantic AI documentation: https://ai.pydantic.dev/
+
 ## Repository notes
 
 - For students, most of the required packages are pre-installed in the SageMaker Studio environment.
