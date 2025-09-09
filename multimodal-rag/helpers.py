@@ -305,7 +305,7 @@ def demo_search_comparison(client: WeaviateClient):
     from weaviate.classes.query import MetadataQuery
 
     articles = client.collections.use("FinancialArticles")
-    query = "technology earnings"
+    query = "forecasting"
 
     print("🔍 **SEARCH COMPARISON DEMO**")
     print(f"Query: '{query}'\n")
