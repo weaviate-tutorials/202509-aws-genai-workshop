@@ -363,6 +363,8 @@ def load_pages_collection(client: WeaviateClient):
     import base64
     from weaviate.util import generate_uuid5
 
+    client.collections.delete("Pages")
+
     client.collections.create(
         name="Pages",
         properties=[
