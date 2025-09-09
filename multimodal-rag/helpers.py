@@ -234,6 +234,7 @@ def load_articles_collection(client: WeaviateClient):
         # Load data
         print(f"Loading data from {DATA_FILE}...")
         df = pd.read_parquet(DATA_FILE)
+        df = df[:1000]  # Limit to first 500 articles for demo
         print(f"Loaded {len(df)} articles")
 
         # Get collection reference
