@@ -129,7 +129,7 @@ def load_articles_collection(client: WeaviateClient):
 
     # Configuration
     COLLECTION_NAME = "FinancialArticles"
-    DATA_FILE = "multimodal-rag/data/fin_news_articles_5000.parquet"
+    DATA_FILE = "data/fin_news_articles_5000.parquet"
     BATCH_SIZE = 100
     MAX_ERRORS = 10
 
