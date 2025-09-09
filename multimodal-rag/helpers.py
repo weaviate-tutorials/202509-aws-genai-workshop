@@ -274,19 +274,6 @@ def load_articles_collection(client: WeaviateClient):
 
         # Verify the data
         print(f"Total articles in collection: {len(articles)}")
-
-        # Test basic search
-        response = articles.query.near_text(
-            query="technology earnings",
-            target_vector="title",
-            limit=3
-        )
-
-        print("Sample search results for 'technology earnings':")
-        for item in response.objects:
-            print(f"- {item.properties['article_title']}")
-
-        print(f"Successfully uploaded collection: {COLLECTION_NAME}")
         return True
 
     except Exception as e:
@@ -300,12 +287,11 @@ def load_articles_collection(client: WeaviateClient):
 
 
 
-def demo_search_comparison(client: WeaviateClient):
+def demo_search_comparison(client: WeaviateClient, query="forecasting"):
     """Demonstrate different search types with the same query"""
     from weaviate.classes.query import MetadataQuery
 
     articles = client.collections.use("FinancialArticles")
-    query = "forecasting"
 
     print("🔍 **SEARCH COMPARISON DEMO**")
     print(f"Query: '{query}'\n")
