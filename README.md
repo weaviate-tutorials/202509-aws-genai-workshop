@@ -2,23 +2,30 @@
 
 This repository is for a hands-on workshop for building intelligent search systems, RAG workflows, and AI agents, with [Weaviate vector database](https://docs.weaviate.io/weaviate) and [AWS Bedrock](https://aws.amazon.com/bedrock/) in less than a day.
 
-## Prerequisites
-
-**None**: At the workshop, a temporary AWS account will be provided for you to use.
-
-Recommended: Some familiarity with AWS services and Python programming.
-
 > [!CAUTION]
 > Optionally, you can run the workshop on your own AWS account. **Doing so will incur costs on your own account.** We cannot be responsible for any costs incurred on your personal AWS account. Please proceed with caution and at your own risk.
 
+## Prerequisites
+
+**None required** - AWS account and development environment provided.
+
+Recommended: Some familiarity with AWS services and Python programming.
+
 ## Workshop instructions
 
-### AWS setup
+> [!NOTE]
+> At the workshop, the instructor will guide you through the setup. If you miss any steps, you can follow the visual GuideFlow guides linked below.
 
-1. Download this [CloudFormation template file (0-setup-weaviate.yaml)](./0-setup-weaviate.yaml).
-2. Click on the provided AWS workshop link to access the temporary AWS account for the workshop
-    - 2025 Sep 10 link: https://catalog.us-east-1.prod.workshops.aws/join?access-code=b2e1-02c699-db
-3. **Follow [this visual guide](https://app.guideflow.com/player/zklz623bop)**. It shows how to:
+### AWS account & resources setup
+
+Set up your own AWS account and resources for the workshop.
+
+The instructor will take you through the same steps as in this <a href="https://app.guideflow.com/player/zklz623bop" target="_blank">GuideFlow visual guide</a>. The steps are to:
+
+1. Go to the provided AWS workshop link to access the temporary AWS account for the workshop
+    - <a href="https://catalog.us-east-1.prod.workshops.aws/join?access-code=b2e1-02c699-db" target="_blank">2025 Sep 10</a>
+2. Download this <a href="./0-setup-weaviate.yaml" target="_blank">CloudFormation template file (0-setup-weaviate.yaml)</a>.
+3. Set up the AWS resources, including:
     - Access the AWS workshop account.
       - You may need to authenticate with a one-time password (OTP) sent to your email.
     - Open the AWS Management Console
@@ -26,35 +33,14 @@ Recommended: Some familiarity with AWS services and Python programming.
     - Spin up a Weaviate database on AWS ECS
     - Set up SageMaker Studio where you will run the workshop notebooks
 
-Preview:
+### Workshop setup
 
-| Open AWS Console | Go to Bedrock | Request model access |
-|----------|----------|----------|
-| ![Open AWS Console](assets/bedrock-setup-preview-1.png) | ![Go to Bedrock](assets/bedrock-setup-preview-2.png) | ![Request model access](assets/bedrock-setup-preview-3.png) |
-
-### Multimodal RAG workshop setup
-
-1. Follow this [visual guide for setting up the Multimodal RAG workshop](https://app.guideflow.com/player/3r3d3nmsnp). This shows you how to:
+1. Follow this <a href="https://app.guideflow.com/player/3r3d3nmsnp" target="_blank">visual guide for setting up the workshop repository</a>. This shows you how to:
     - Set up a SageMaker Studio JupyterLab environment
     - Clone this repository into your SageMaker Studio environment
-2. Go to the `multimodal-rag` directory and open the `0-setup.ipynb` notebook.
 
-Preview:
-
-| Go to SageMaker Studio | Open a JupyterLab instance | Clone the repo |
-|----------|----------|----------|
-| ![Go to SageMaker Studio](assets/mmrag-setup-preview-1.png) | ![Open a JupyterLab instance](assets/mmrag-setup-preview-2.png) | ![Clone the repo](assets/mmrag-setup-preview-3.png) |
-
-**Go to the [visual guide](https://app.guideflow.com/player/3r3d3nmsnp) for the full instructions.**
-
-### Agent workshop setup
-
-1. Go to SageMaker Studio and open Code Editor.
-2. Clone this repository into your SageMaker Studio environment:
-    - Go to the Git tab on the left sidebar
-    - Click on the "Clone a Repository" button
-    - Enter the URL of this repository: `https://github.com/weaviate-tutorials/202509-aws-genai-workshop.git`
-3. Open the `agent` directory and start with `0-setup.ipynb` notebook.
+- The "Multimodal RAG" workshop is in the `multimodal-rag` directory, with the `0-setup.ipynb` notebook.
+- The "Build your own agent" workshop is in the `agent` directory, with the `lesson-1.ipynb` notebook.
 
 ## Resources
 
