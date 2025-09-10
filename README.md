@@ -16,7 +16,8 @@ Recommended: Some familiarity with AWS services and Python programming.
 ### AWS setup
 
 1. Download this [CloudFormation template file (0-setup-weaviate.yaml)](./0-setup-weaviate.yaml).
-2. Click on [this AWS workshop link](https://catalog.us-east-1.prod.workshops.aws/join?access-code=b2e1-02c699-db) to access the temporary AWS account for the workshop.
+2. Click on the provided AWS workshop link to access the temporary AWS account for the workshop
+    - 2025 Sep 10 link: https://catalog.us-east-1.prod.workshops.aws/join?access-code=b2e1-02c699-db
 3. **Follow [this visual guide](https://app.guideflow.com/player/zklz623bop)**. It shows how to:
     - Access the AWS workshop account.
       - You may need to authenticate with a one-time password (OTP) sent to your email.
