@@ -101,14 +101,14 @@ def main():
                 Configure.Vectors.text2vec_aws(
                     name="title",
                     source_properties=["article_title"],
-                    region="us-west-2",
+                    region="us-east-1",
                     service="bedrock",
                     model="amazon.titan-embed-text-v2:0"
                 ),
                 Configure.Vectors.text2vec_aws(
                     name="content",
                     source_properties=["article"],
-                    region="us-west-2",
+                    region="us-east-1",
                     service="bedrock",
                     model="amazon.titan-embed-text-v2:0"
                 )

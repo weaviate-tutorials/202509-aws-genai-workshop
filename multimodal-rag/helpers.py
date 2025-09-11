@@ -42,7 +42,7 @@ def demo_vector_visualization():
     def get_embeddings(sent_inputs):
         bedrock_runtime = boto3.client(
             service_name='bedrock-runtime',
-            region_name='us-west-2',
+            region_name='us-east-1',
         )
 
         embeddings = []
@@ -217,14 +217,14 @@ def load_articles_collection(client: WeaviateClient):
                 Configure.Vectors.text2vec_aws(
                     name="title",
                     source_properties=["article_title"],
-                    region="us-west-2",
+                    region="us-east-1",
                     service="bedrock",
                     model="amazon.titan-embed-text-v2:0"
                 ),
                 Configure.Vectors.text2vec_aws(
                     name="content",
                     source_properties=["article"],
-                    region="us-west-2",
+                    region="us-east-1",
                     service="bedrock",
                     model="amazon.titan-embed-text-v2:0"
                 )
@@ -372,7 +372,7 @@ def load_pages_collection(client: WeaviateClient):
             Configure.Vectors.multi2vec_aws(
                 name="page",
                 image_fields=["page_image"],
-                region="us-west-2",
+                region="us-east-1",
                 model="amazon.titan-embed-image-v1"
             )
         ]
@@ -448,7 +448,7 @@ def demo_multimodal_rag(client):
     )
 
     gen_config_aws = GenerativeConfig.aws(
-        region="us-west-2",
+        region="us-east-1",
         service="bedrock",
         model="us.amazon.nova-pro-v1:0"
     )
